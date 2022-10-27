@@ -83,9 +83,9 @@ public class RecursiveMethods {
 			int temp = array[index];
 			array[index] = array[lastIndex - index];
 			array[lastIndex] = temp;
-			return helperReverse(array, index + 1);
+			helperReverse(array, index + 1);
 		}
-		// return helperReverse(array, index + 1);
+		return helperReverse(array, index + 1);
 	}
 
 	/**
